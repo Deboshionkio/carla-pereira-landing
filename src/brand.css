@@ -1,0 +1,126 @@
+:root {
+  --ink: #07529a;
+  --cream: #ffffff;
+  --paper: #ffffff;
+  --coral: #ffe000;
+  --teal: #00843d;
+  --muted: #496577;
+  --line: rgba(7, 82, 154, 0.2);
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.site-header {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.nav-cta,
+.band-coral {
+  background: #00843d;
+}
+
+.band-teal {
+  background: #00843d;
+}
+
+.button-dark {
+  background: var(--coral);
+  color: #080908;
+}
+
+.button-light {
+  background: #ffffff;
+  color: var(--teal);
+}
+
+.image-frame {
+  height: 460px;
+  background: #f4f4ef;
+}
+
+.image-frame img {
+  filter: none;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.sticker {
+  background: var(--coral);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(56px, 7vw, 94px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(48px, 6vw, 78px) !important;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px !important;
+  font-weight: 700;
+}
+
+.hero-visual:after,
+.quote-line {
+  border-color: var(--coral);
+  background: var(--coral);
+}
+
+.footer {
+  background: var(--ink);
+}
+
+.number {
+  color: var(--coral);
+}
+
+.floating-whatsapp {
+  background: var(--teal);
+  border: 2px solid var(--coral);
+}
+
+.floating-whatsapp .whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 46px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  .cause-grid,
+  .cause-grid article {
+    min-width: 0;
+  }
+
+  .image-frame {
+    height: 365px;
+  }
+}
