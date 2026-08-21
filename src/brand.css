@@ -91,6 +91,20 @@ h3 {
 }
 
 .floating-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: fixed;
+  z-index: 20;
+  right: 24px;
+  bottom: 24px;
+  padding: 14px 18px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   background: var(--teal);
   border: 2px solid var(--coral);
 }
