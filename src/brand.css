@@ -86,6 +86,37 @@ h3 {
   background: var(--ink);
 }
 
+.campaign-video {
+  padding: 92px 0 100px;
+  background: #f2f2f2;
+}
+
+.video-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  align-items: center;
+}
+
+.video-heading h2 {
+  max-width: 390px;
+  margin-bottom: 0;
+}
+
+.instagram-embed {
+  width: 100%;
+  max-width: 540px;
+  justify-self: end;
+}
+
+.instagram-embed .instagram-media {
+  min-width: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  background: #fff !important;
+  box-shadow: 0 14px 35px rgba(7, 82, 154, 0.14) !important;
+}
+
 .number {
   color: var(--coral);
 }
@@ -136,5 +167,21 @@ h3 {
 
   .image-frame {
     height: 365px;
+  }
+
+  .campaign-video {
+    padding: 72px 0 80px;
+  }
+
+  .video-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .instagram-embed {
+    max-width: 540px;
+    margin: 0 auto;
   }
 }
