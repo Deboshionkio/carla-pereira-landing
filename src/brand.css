@@ -123,8 +123,23 @@ h3 {
 
 .association-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.8fr 1.65fr 0.9fr;
   gap: 7vw;
+}
+
+.association-image {
+  align-self: start;
+  margin: 0;
+  position: sticky;
+  top: 110px;
+}
+
+.association-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 8px solid #fff;
+  box-shadow: 0 14px 35px rgba(7, 82, 154, 0.14);
 }
 
 .association-content h2 {
@@ -272,6 +287,12 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 38px;
+  }
+
+  .association-image {
+    position: static;
+    width: min(100%, 430px);
+    margin: 0 auto;
   }
 
   .association-content h2 {
