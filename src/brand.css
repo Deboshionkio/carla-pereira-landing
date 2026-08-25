@@ -84,6 +84,17 @@ h3 {
 
 .footer {
   background: var(--ink);
+  padding-bottom: 100px;
+}
+
+.copyright {
+  flex-basis: 100%;
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .campaign-video {
@@ -172,6 +183,10 @@ h3 {
 
   .campaign-video {
     padding: 72px 0 80px;
+  }
+
+  .footer {
+    padding-bottom: 100px;
   }
 
   .video-inner {
