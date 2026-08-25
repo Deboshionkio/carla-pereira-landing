@@ -113,6 +113,68 @@ h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.band-paper {
+  background: #f2f2f2;
+}
+
+.association {
+  padding: 110px 0 115px;
+}
+
+.association-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 7vw;
+}
+
+.association-content h2 {
+  max-width: 760px;
+  margin-bottom: 38px;
+}
+
+.association-content h3 {
+  margin: 34px 0 14px;
+  color: var(--teal);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.association-content > p,
+.association-risks p {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.association-risks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  margin-top: 42px;
+}
+
+.association-risks > div {
+  padding-top: 3px;
+  border-top: 2px solid var(--coral);
+}
+
+.association-risks .association-commitment {
+  padding: 22px 24px 12px;
+  border-top: 0;
+  background: var(--teal);
+}
+
+.association-commitment h3,
+.association-commitment p {
+  color: #fff;
+}
+
+.association-commitment h3 {
+  margin-top: 0;
+}
+
 .campaign-video {
   padding: 92px 0 100px;
   background: #f2f2f2;
@@ -199,6 +261,21 @@ h3 {
 
   .campaign-video {
     padding: 72px 0 80px;
+  }
+
+  .association {
+    padding: 80px 0 85px;
+  }
+
+  .association-grid,
+  .association-risks {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .association-content h2 {
+    margin-bottom: 30px;
   }
 
   .footer {
