@@ -3,8 +3,7 @@ import './brand.css'
 
 const whatsapp = 'https://wa.me/554892074105?text=Oi%20Carla%2C%20quero%20conversar%20com%20voc%C3%AA.'
 const instagram = 'https://www.instagram.com/carla.zpereira/p/DcFijwWNmk-/'
-const youtubeShort = 'https://youtube.com/shorts/x8SPxkqhg4g'
-const youtubeVideo = youtubeShort.replace('/shorts/', '/embed/')
+const youtubeVideo = 'https://www.youtube.com/embed/psdnZqtf5fQ'
 const assetBase = import.meta.env.BASE_URL
 
 const causes = [

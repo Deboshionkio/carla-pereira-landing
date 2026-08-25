@@ -105,9 +105,9 @@ h3 {
 
 .youtube-embed {
   width: 100%;
-  max-width: 540px;
+  max-width: 340px;
   justify-self: end;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   box-shadow: 0 14px 35px rgba(7, 82, 154, 0.14);
 }
 
