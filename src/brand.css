@@ -13,6 +13,17 @@ body {
   background: #ffffff;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/fundo_pagina.png') center / cover no-repeat;
+  opacity: 0.12;
 }
 
 .site-header {
