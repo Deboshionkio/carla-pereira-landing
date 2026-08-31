@@ -114,8 +114,12 @@ body::before {
 
 .hero {
   position: relative;
-  min-height: 730px;
+  min-height: 720px;
   padding: 18px 0 40px;
+  display: grid;
+  grid-template-columns: 1.06fr 0.94fr;
+  align-items: stretch;
+  gap: 2vw;
   background: linear-gradient(135deg, rgba(173, 232, 255, 0.75) 0%, rgba(124, 208, 255, 0.75) 35%, rgba(129, 236, 216, 0.6) 100%);
   overflow: hidden;
 }
@@ -136,7 +140,8 @@ body::before {
 }
 
 .hero-copy {
-  padding-top: 12px;
+  padding-top: 18px;
+  padding-left: 4px;
 }
 
 .eyebrow {
@@ -159,10 +164,12 @@ body::before {
 .hero h1 {
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 900;
-  line-height: 0.82;
-  letter-spacing: -0.06em;
+  line-height: 0.74;
+  letter-spacing: -0.07em;
   color: #0e2f78;
-  margin-bottom: 26px;
+  margin: 0 0 28px;
+  font-size: clamp(72px, 5.5vw, 172px);
+  max-width: 620px;
 }
 
 .hero h1 em {
@@ -214,16 +221,19 @@ body::before {
   justify-content: center;
   position: relative;
   min-height: 520px;
+  padding-right: 28px;
 }
 
 .hero-image-wrap {
   position: relative;
-  width: min(540px, 100%);
-  max-width: 540px;
-  border-radius: 28px 28px 0 0;
+  width: min(620px, 100%);
+  height: 650px;
+  max-width: 620px;
+  border-radius: 0;
   overflow: hidden;
   background: rgba(255,255,255,0.12);
-  box-shadow: 0 12px 28px rgba(12, 43, 82, 0.12);
+  box-shadow: none;
+  margin-left: auto;
 }
 
 .hero-image-wrap::before {
@@ -238,16 +248,16 @@ body::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   filter: saturate(1.05) contrast(1.04);
 }
 
 .hero-flag {
   position: absolute;
-  right: -30px;
+  right: -20px;
   top: 52px;
-  width: 320px;
-  height: 210px;
+  width: 300px;
+  height: 200px;
   background: linear-gradient(135deg, #1f6bff 0%, #14aa5d 35%, #d31131 100%);
   clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%, 0% 28%);
   transform: rotate(8deg);
@@ -257,14 +267,14 @@ body::before {
 
 .hero-badge {
   position: absolute;
-  right: 8px;
-  bottom: 34px;
+  right: 14px;
+  bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 150px;
+  width: 290px;
+  height: 160px;
   background: linear-gradient(180deg, #13a24a 0%, #0f7e2c 100%);
   color: #fff;
   font-weight: 900;
