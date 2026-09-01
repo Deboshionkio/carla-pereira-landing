@@ -50,60 +50,22 @@ document.querySelector('#app').innerHTML = `
 </header>
 
 <main id="top">
-  <section class="hero" id="carla">
-    <div class="hero-bg-layer">
-      <img src="${assetBase}CandidataCarla.png" alt="Carla Z. Pereira, candidata a deputada estadual" class="hero-bg-img" />
-      <div class="hero-gradient-overlay"></div>
+  <section class="hero section-shell" id="carla">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">CARLA Z. PEREIRA <span class="line"></span> SANTA CATARINA</p>
+      <h1>E se a política começasse <em>ouvindo você?</em></h1>
+      <p class="hero-lead">Eu acredito que política pode ser feita de um jeito diferente: ouvindo mais, aproximando pessoas e transformando boas ideias em ações que melhorem a vida de verdade.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="${whatsapp}" target="_blank" rel="noreferrer">Quero conversar com a Carla <span>↗</span></a>
+        <a class="text-link" href="#historia">Conhecer a Carla <span>↓</span></a>
+      </div>
     </div>
-
-    <div class="hero-container">
-      <div class="hero-copy">
-        <p class="eyebrow">
-          <span>CARLA Z. PEREIRA</span>
-          <span class="sep">|</span>
-          <span>CANDIDATA A DEPUTADA ESTADUAL</span>
-          <span class="sep">|</span>
-          <span class="highlight-sc">SANTA CATARINA</span>
-        </p>
-
-        <h1>
-          E se a<br>
-          <span class="text-blue">política</span><br>
-          começasse<br>
-          <span class="text-yellow">ouvindo<br>você?</span>
-        </h1>
-
-        <p class="hero-lead">
-          Eu acredito que política pode ser feita de um jeito diferente: ouvindo mais, aproximando pessoas e transformando boas ideias em ações que melhorem a vida de verdade.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button button-hero-yellow" href="${whatsapp}" target="_blank" rel="noreferrer">
-            QUERO CONVERSAR COM A CARLA <span class="arrow">↗</span>
-          </a>
-          <a class="text-link-underline" href="#historia">
-            CONHECER A CARLA <span>↓</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-footer-elements">
-        <div class="hero-vote-badge">
-          <span class="vote-text">Vote</span>
-          <div class="vote-badge-green">
-            <span>20055</span>
-          </div>
-        </div>
-
-        <a class="hero-btn-whatsapp-bottom" href="${whatsapp}" target="_blank" rel="noreferrer">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a9.7 9.7 0 0 0-8.4 14.55L2.1 22l5.6-1.46A9.7 9.7 0 1 0 12 2Zm0 17.7a8 8 0 0 1-4.08-1.12l-.29-.17-3.32.87.89-3.24-.19-.31A8 8 0 1 1 12 19.7Zm4.38-5.98c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.55.12-.16.24-.63.77-.77.93-.14.16-.28.18-.52.06-1.4-.7-2.32-1.25-3.24-2.83-.25-.43.25-.4.72-1.32.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.65.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66 1.54.66 2.14.72 2.91.61.47-.07 1.4-.57 1.6-1.12.2-.55.2-1.01.14-1.11-.06-.1-.22-.16-.46-.28Z"/></svg>
-          <span>FALE COM A CARLA</span>
-        </a>
-      </div>
+    <div class="hero-visual reveal">
+      <div class="image-frame"><img src="${assetBase}CandidataCarla.png" alt="Carla Z. Pereira, candidata a deputada estadual" /></div>
+      <div class="hero-note"><span class="note-mark">“</span><p>Unir pessoas para transformar boas ideias em ações.</p></div>
+      <div class="sticker">VAMOS<br><b>JUNTOS</b></div>
     </div>
   </section>
-
-  <section class="professionals-intro band-cream" id="profissionais"><div class="section-shell professionals-wrap"><div class="professionals-copy"><p class="kicker">PROFISSIONAIS DA SAÚDE</p><h2>Uma causa que exige voz, respeito e legislação justa.</h2><p>Além dos biomédicos e dos profissionais diretamente ligados à estética, existem muitos profissionais da saúde com formação técnica e acadêmica sólida que também precisam ser respeitados e representados.</p><p>É urgente defender uma atuação mais ampla, segura e com diversidade de especialidades, sem retrocessos nem exclusões desnecessárias.</p><a class="button button-dark" href="/profissionais-saude.html">SAIBA MAIS <span>↗</span></a></div><div class="professionals-card"><span>Defesa dos profissionais da saúde</span><strong>Biomédicos, enfermeiros, fisioterapeutas, farmacêuticos e outras especialidades com formação reconhecida.</strong></div></div></section>
   <section class="campaign-video" aria-labelledby="video-title"><div class="section-shell video-inner"><div class="video-heading"><p class="kicker">UM POUCO MAIS DE PERTO</p><h2 id="video-title">A campanha em <em>movimento.</em></h2></div><div class="youtube-embed"><iframe src="${youtubeVideo}" title="Vídeo da campanha Carla Z. Pereira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></section>
   <section class="intro band-cream" id="historia"><div class="section-shell split"><div class="section-label"><span>01</span><span class="vertical-line"></span><span>MINHA<br>HISTÓRIA</span></div><div class="intro-text"><p class="kicker">POR QUE EU DECIDI ENTRAR PARA A POLÍTICA?</p><h2>Gente de verdade também pode <em>fazer parte.</em></h2><p>Durante muitos anos, construí empresas, gerei empregos, liderei pessoas e participei de projetos e movimentos que transformaram vidas.</p><p>Mas chegou um momento em que apenas reclamar do que não funciona deixou de ser suficiente para mim. Decidi fazer a minha parte.</p><p>Não entrei para a política para fazer dela uma carreira. Entrei porque acredito que podemos ocupar melhor esses espaços, aproximar a política das pessoas e transformar necessidades reais em soluções possíveis.</p><p class="signoff">Sem extremismos. Sem dividir para conquistar.<br><strong>Unindo para realizar.</strong></p></div></div></section>
   <section class="association band-paper" id="associacao"><div class="section-shell association-grid"><div class="section-label"><span>02</span><span class="vertical-line"></span><span>DEFESA<br>DA ESTÉTICA</span></div><div class="association-content"><p class="kicker">UM MOVIMENTO NECESSÁRIO</p><h2>Movimento em Defesa da Estética <em>Avançada e Multiprofissional.</em></h2><h3>O cenário atual</h3><p>Tramitam ações que buscam restringir os procedimentos estéticos minimamente invasivos exclusivamente aos médicos.</p><p>Essa medida impacta diretamente a atuação de biomédicos, fisioterapeutas, enfermeiros e farmacêuticos pós-graduados e habilitados em estética.</p><div class="association-risks"><div><h3>Os riscos desta restrição</h3><p><strong>Inviabilidade profissional:</strong> risco à atuação legal de milhares de profissionais de saúde devidamente qualificados por seus conselhos federais.</p><p><strong>Prejuízo ao consumidor:</strong> a centralização dos serviços gera um monopólio, elevando o preço de procedimentos, como Botox e preenchimentos, em até quatro vezes.</p></div><div class="association-commitment"><h3>Nosso compromisso: a criação da associação</h3><p>Como resposta a essa ameaça, este projeto apoia ativamente a criação de uma associação representativa dedicada exclusivamente à defesa dos profissionais de saúde da estética.</p><p>O objetivo central da futura associação será blindar juridicamente o direito ao trabalho e garantir a união das classes afetadas.</p><p>Defendemos o acesso da sociedade a tratamentos de qualidade, com preços justos, fundamentados na qualificação técnica e no respeito às normas sanitárias.</p></div></div></div><figure class="association-image"><img src="${assetBase}imagem-associacao.webp" alt="Profissionais de saúde reunidos em um ambiente de trabalho" /></figure></div></section>
