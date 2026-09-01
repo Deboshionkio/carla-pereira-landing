@@ -279,7 +279,7 @@ h2 em {
 }
 .split {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 6vw;
 }
 .section-label {
@@ -297,6 +297,16 @@ h2 em {
 }
 .intro-text {
   max-width: 720px;
+}
+.history-image {
+  width: 100%;
+  max-width: 970px;
+  margin: 0;
+}
+.history-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .intro h2,
 .causes h2,
@@ -604,6 +614,9 @@ h2 em {
     display: flex;
     flex-direction: column;
     gap: 48px;
+  }
+  .history-image {
+    max-width: none;
   }
   .section-label {
     order: -1;
