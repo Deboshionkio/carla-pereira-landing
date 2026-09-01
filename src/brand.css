@@ -1,6 +1,6 @@
 .site-header {
   width: 100%;
-  height: 82px;
+  height: 96px;
   padding: 0 2vw 0 0;
   border-bottom: 0;
   background: #fff;
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 82px;
+  min-height: 96px;
   height: 100%;
   padding: 0 18px 0 24px;
   background: #ffd100;
@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 82px;
+  min-height: 96px;
   height: 100%;
   margin-right: 12px;
   padding: 0 32px 0 24px;
@@ -61,27 +61,29 @@
 }
 
 .header-number span {
-  font-size: 42px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 46px;
   font-weight: 900;
-  font-style: italic;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 
 .header-subtitle {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .title-deputada {
   color: #008744;
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 17px;
+  font-weight: 900;
 }
 
 .title-sc {
-  color: #0056b3;
-  font-size: 11px;
+  color: #008744;
+  font-size: 17px;
   font-weight: 900;
   letter-spacing: 0.05em;
 }
@@ -120,7 +122,7 @@
 @media (max-width: 980px) {
   .site-header {
     height: auto;
-    min-height: 82px;
+    min-height: 96px;
     padding: 0 2vw 0 0;
   }
 
