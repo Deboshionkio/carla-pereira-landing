@@ -308,6 +308,51 @@ h2 em {
   width: 100%;
   height: auto;
 }
+.association {
+  padding: 120px 0;
+}
+.association-grid {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) minmax(280px, 380px);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+.association-content {
+  min-width: 0;
+}
+.association-content h2 {
+  font-size: clamp(38px, 4.2vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+}
+.association-content > p,
+.association-risks p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.association-risks {
+  display: grid;
+  gap: 28px;
+  margin-top: 34px;
+}
+.association-risks h3,
+.association-content > h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.association-image {
+  width: 100%;
+  margin: 0;
+}
+.association-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .intro h2,
 .causes h2,
 .listen h2,
@@ -617,6 +662,19 @@ h2 em {
   }
   .history-image {
     max-width: none;
+  }
+  .association {
+    padding: 80px 0;
+  }
+  .association-grid,
+  .association-risks {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+  .association-image {
+    width: min(100%, 430px);
+    margin: 0 auto;
   }
   .section-label {
     order: -1;
