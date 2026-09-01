@@ -77,13 +77,13 @@
 
 .title-deputada {
   color: #008744;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 900;
 }
 
 .title-sc {
   color: #008744;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 900;
   letter-spacing: 0.05em;
 }
@@ -104,7 +104,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 26px;
   background: #008744;
   color: #fff;
