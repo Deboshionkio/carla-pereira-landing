@@ -96,10 +96,10 @@ nav span {
 .hero {
   min-height: 690px;
   display: grid;
-  grid-template-columns: 1.02fr 0.98fr;
+  grid-template-columns: 1.08fr 1.22fr;
   align-items: center;
-  gap: 7vw;
-  padding: 75px 0 95px;
+  gap: 2vw;
+  padding: 55px 0 95px;
 }
 .eyebrow,
 .kicker {
@@ -205,12 +205,14 @@ h2 em {
 }
 .hero-visual {
   position: relative;
-  max-width: 510px;
-  justify-self: end;
+  width: min(100%, 660px);
+  max-width: 660px;
+  justify-self: start;
+  margin-left: -24px;
 }
 .image-frame {
   background: #d5d9cb;
-  height: 560px;
+  height: 610px;
   overflow: hidden;
 }
 .image-frame img {
