@@ -321,9 +321,11 @@ h2 em {
   inset: 0 0 auto;
   height: 540px;
   background: url("/backgrounddefesasaude.jpeg") center right / cover no-repeat;
-  z-index: -1;
+  z-index: 0;
 }
 .association-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr) minmax(290px, 390px);
   gap: clamp(32px, 5vw, 72px);
