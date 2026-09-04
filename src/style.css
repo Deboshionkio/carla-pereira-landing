@@ -311,7 +311,17 @@ h2 em {
   height: auto;
 }
 .association {
+  position: relative;
+  isolation: isolate;
   padding: 120px 0 100px;
+}
+.association::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 540px;
+  background: url("/backgrounddefesasaude.jpeg") center right / cover no-repeat;
+  z-index: -1;
 }
 .association-grid {
   display: grid;
@@ -432,6 +442,14 @@ h2 em {
   display: grid;
   gap: 14px;
 }
+.association-commitment {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+.association-commitment h3,
+.association-commitment p {
+  color: #fff;
+}
 .risk-list {
   list-style: none;
   margin: 0;
@@ -456,7 +474,7 @@ h2 em {
 .association-image {
   position: relative;
   width: 100%;
-  margin: 28px 0 0;
+  margin: 520px 0 0;
 }
 .association-image::before {
   content: "";
@@ -477,6 +495,13 @@ h2 em {
   object-fit: cover;
 }
 @media (max-width: 980px) {
+  .association {
+    padding-top: 88px;
+  }
+  .association::before {
+    height: 430px;
+    background-position: 62% center;
+  }
   .association-grid {
     grid-template-columns: 1fr;
   }
@@ -489,7 +514,7 @@ h2 em {
   }
   .association-image {
     max-width: 520px;
-    margin: 0 auto;
+    margin: 32px auto 0;
   }
 }
 .intro h2,
