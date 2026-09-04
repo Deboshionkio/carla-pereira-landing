@@ -800,7 +800,7 @@ h2 em {
     max-width: none;
   }
   .association {
-    padding: 80px 0;
+    padding: 88px 0 80px;
   }
   .association-grid,
   .association-risks {
@@ -810,7 +810,7 @@ h2 em {
   }
   .association-image {
     width: min(100%, 430px);
-    margin: 0 auto;
+    margin: 470px auto 0;
   }
   .section-label {
     order: -1;
