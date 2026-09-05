@@ -314,18 +314,12 @@ h2 em {
   position: relative;
   isolation: isolate;
   padding: 120px 0 100px;
+  background: var(--paper) url("/backgrounddefesasaude.jpeg") center right / 100% 540px no-repeat;
 }
 .association::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 540px;
-  background: url("/backgrounddefesasaude.jpeg") center right / cover no-repeat;
-  z-index: 0;
+  display: none;
 }
 .association-grid {
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr) minmax(290px, 390px);
   gap: clamp(32px, 5vw, 72px);
@@ -499,10 +493,11 @@ h2 em {
 @media (max-width: 980px) {
   .association {
     padding-top: 88px;
+    background-size: auto 430px;
+    background-position: 62% top;
   }
   .association::before {
-    height: 430px;
-    background-position: 62% center;
+    display: none;
   }
   .association-grid {
     grid-template-columns: 1fr;
